@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://haorical.xyz/posts/28683/</loc>
+    
+    <lastmod>2022-04-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://haorical.xyz/posts/30065/</loc>
+    
+    <lastmod>2022-03-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://haorical.xyz/tags/index.html</loc>
+    
+    <lastmod>2022-03-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://haorical.xyz/link/index.html</loc>
+    
+    <lastmod>2022-03-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://haorical.xyz/categories/index.html</loc>
+    
+    <lastmod>2022-03-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  <url>
+    <loc>https://haorical.xyz/</loc>
+    <lastmod>2022-04-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://haorical.xyz/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://haorical.xyz/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+</urlset>

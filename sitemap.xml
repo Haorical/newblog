@@ -4,7 +4,7 @@
   <url>
     <loc>https://haorical.xyz/posts/63805/</loc>
     
-    <lastmod>2022-05-11</lastmod>
+    <lastmod>2022-05-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -85,29 +85,29 @@
 
   <url>
     <loc>https://haorical.xyz/</loc>
-    <lastmod>2022-05-11</lastmod>
+    <lastmod>2022-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://haorical.xyz/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2022-05-11</lastmod>
+    <loc>https://haorical.xyz/tags/esp8266/</loc>
+    <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://haorical.xyz/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2022-05-11</lastmod>
+    <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://haorical.xyz/tags/esp8266/</loc>
-    <lastmod>2022-05-11</lastmod>
+    <loc>https://haorical.xyz/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -115,22 +115,22 @@
 
   
   <url>
+    <loc>https://haorical.xyz/categories/%E5%BC%80%E5%8F%91%E6%9D%BF/</loc>
+    <lastmod>2022-05-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://haorical.xyz/categories/%E8%AF%BE%E7%A8%8B%E5%A4%8D%E4%B9%A0/</loc>
-    <lastmod>2022-05-11</lastmod>
+    <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://haorical.xyz/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2022-05-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://haorical.xyz/categories/%E5%BC%80%E5%8F%91%E6%9D%BF/</loc>
-    <lastmod>2022-05-11</lastmod>
+    <lastmod>2022-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

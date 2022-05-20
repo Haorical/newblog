@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>算法设计分析考试2022 | haorical的博客</title><meta name="keywords" content="算法"><meta name="author" content="Haorical"><meta name="copyright" content="Haorical"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="总的来说，感觉这次比较简单，应该是疫情上网课的原因，算的数据也比较小，虽然最后延长了15分钟，但好好复习应该都可以做完  综合题 40矩阵连乘 105x5矩阵，挺好算的，送分  求m[1][5] 最少乘法次数 最优解  流水作业调度变形 10只是把作业换成切菜和炒菜了，送分  安排顺序 时间  最短路径 10没什么好说的，就是给了个图，求到各点的最短路径，送分 最小生成树 106节点 10个边">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法设计分析考试2022">
+<meta property="og:url" content="https://haorical.xyz/posts/2254/index.html">
+<meta property="og:site_name" content="haorical的博客">
+<meta property="og:description" content="总的来说，感觉这次比较简单，应该是疫情上网课的原因，算的数据也比较小，虽然最后延长了15分钟，但好好复习应该都可以做完  综合题 40矩阵连乘 105x5矩阵，挺好算的，送分  求m[1][5] 最少乘法次数 最优解  流水作业调度变形 10只是把作业换成切菜和炒菜了，送分  安排顺序 时间  最短路径 10没什么好说的，就是给了个图，求到各点的最短路径，送分 最小生成树 106节点 10个边">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png">
+<meta property="article:published_time" content="2022-05-20T10:22:17.000Z">
+<meta property="article:modified_time" content="2022-05-20T11:21:41.351Z">
+<meta property="article:author" content="Haorical">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://haorical.xyz/posts/2254/"><link rel="preconnect" href="//fastly.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Haorical","link":"链接: ","source":"来源: haorical的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://fastly.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://fastly.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '算法设计分析考试2022',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-20 19:21:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://blog.haorical.top/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">haorical的博客</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">算法设计分析考试2022</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-05-20T10:22:17.000Z" title="发表于 2022-05-20 18:22:17">2022-05-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-20T11:21:41.351Z" title="更新于 2022-05-20 19:21:41">2022-05-20</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%80%83%E8%AF%95/">考试</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">930</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="算法设计分析考试2022"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
+<p>总的来说，感觉这次比较简单，应该是疫情上网课的原因，算的数据也比较小，虽然最后延长了15分钟，但好好复习应该都可以做完</p>
+</blockquote>
+<h2 id="综合题-40"><a href="#综合题-40" class="headerlink" title="综合题 40"></a>综合题 40</h2><h3 id="矩阵连乘-10"><a href="#矩阵连乘-10" class="headerlink" title="矩阵连乘 10"></a>矩阵连乘 10</h3><p>5x5矩阵，挺好算的，<strong>送分</strong></p>
+<ol>
+<li>求m[1][5]</li>
+<li>最少乘法次数</li>
+<li>最优解</li>
+</ol>
+<h3 id="流水作业调度变形-10"><a href="#流水作业调度变形-10" class="headerlink" title="流水作业调度变形 10"></a>流水作业调度变形 10</h3><p>只是把作业换成切菜和炒菜了，<strong>送分</strong></p>
+<ol>
+<li>安排顺序</li>
+<li>时间</li>
+</ol>
+<h3 id="最短路径-10"><a href="#最短路径-10" class="headerlink" title="最短路径 10"></a>最短路径 10</h3><p>没什么好说的，就是给了个图，求到各点的最短路径，<strong>送分</strong></p>
+<h3 id="最小生成树-10"><a href="#最小生成树-10" class="headerlink" title="最小生成树 10"></a>最小生成树 10</h3><p>6节点 10个边</p>
+<ol>
+<li><p>kruskal求最小生成树 <strong>送分</strong></p>
+</li>
+<li><p>比较prim算法和krusal哪个更适合</p>
+</li>
+</ol>
+<p>第二问就是比较时间复杂度，一个是O(nm)另一个是O(mlog(m))比大小就行</p>
+<h2 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h2><h3 id="时间复杂度-15"><a href="#时间复杂度-15" class="headerlink" title="时间复杂度 15"></a>时间复杂度 15</h3><ol>
+<li>求时间复杂度</li>
+<li>比较二分、归并、上面算法的上界</li>
+</ol>
+<p>也是比较好算，第二问别记错就行 log(n) nlog(n) n^2 <strong>送分</strong></p>
+<h3 id="01背包变形-15"><a href="#01背包变形-15" class="headerlink" title="01背包变形 15"></a>01背包变形 15</h3><pre><code>p=[48 49 40 45]
+v=[8 7 10 9]
+m=100
+</code></pre>
+<ol>
+<li>回溯法</li>
+<li>优先级队列分支限界</li>
+</ol>
+<p>复习到了的，一般都会 <strong>送分</strong></p>
+<h2 id="算法设计"><a href="#算法设计" class="headerlink" title="算法设计"></a>算法设计</h2><h3 id="称重-15"><a href="#称重-15" class="headerlink" title="称重 15"></a>称重 15</h3><p>255个鹅蛋，1个鸭蛋，混一块，给个天平，设计算法称出鸭蛋</p>
+<ol>
+<li>实际不高于log(n)复杂度算法</li>
+<li>100个蛋，最多称多少次，找到鸭蛋</li>
+<li>设计一个更快的算法</li>
+</ol>
+<p>和课件称金块的很像，第一问二分放天平两边，第二问6个，第三问三分四分…… <strong>送分</strong></p>
+<h3 id="积木堆-15"><a href="#积木堆-15" class="headerlink" title="积木堆 15"></a>积木堆 15</h3><blockquote>
+<p>n堆积木，每次合并2堆，合并(n-1)次，求最小合并代价。代价：合并的两个积木堆积木数量和</p>
+</blockquote>
+<ol>
+<li>设计算法 <strong>送分</strong></li>
+<li>给一组数据，求合并策略 <strong>送分</strong></li>
+<li>只能合并挨着的两堆，设计dp算法，求最小代价</li>
+</ol>
+<p>一二问贪心，贪心策略：每次合并，最少的两堆优先</p>
+<p>第二问，类似哈夫曼树的求解过程</p>
+<p>第三问区间dp，就是石子合并</p>
+<blockquote>
+<p>设有N堆沙子排成一排，其编号为1，2，3，…，N（N&lt; &#x3D;300）。每堆沙子有一定的数量，可以用一个整数来描述，现在要将N堆沙子合并成为一堆，每次只能合并相邻的两堆，合并的代价为这两堆沙子的数量之和，合并后与这两堆沙子相邻的沙子将和新堆相邻，合并时由于选择的顺序不同，合并的总代价也不相同，如有4堆沙子分别为1 3 5 2我们可以先合并1、2堆，代价为4，得到4 5 2又合并1，2堆，代价为9，得到9 2，再合并得到11，总代价为4+9+11&#x3D;24，如果第二步是先合并2，3堆，则代价为7，得到4 7，最后一次合并代价为11，总代价为4+7+11&#x3D;22；问题是：找出一种合理的方法，使总的代价最小。输出最小代价。</p>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 状态转移方程</span></span><br><span class="line"><span class="comment">// dp[i][j]表示[i,j]区间合并最小代价</span></span><br><span class="line"><span class="comment">// dp[i][j]=min(dp[i][j],dp[i][k]+dp[k+1][j]+s[j]-s[i-1])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1010</span>;</span><br><span class="line"><span class="type">int</span> a[N],s[N],dp[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,t;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123; <span class="comment">// 1开始</span></span><br><span class="line">        cin&gt;&gt;s[i];</span><br><span class="line">        s[i]+=s[i<span class="number">-1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> len=<span class="number">2</span>;len&lt;=n;len++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i+len<span class="number">-1</span>&lt;=n;i++)&#123;</span><br><span class="line">            <span class="type">int</span> j=i+len<span class="number">-1</span>;</span><br><span class="line">            dp[i][j]=<span class="number">0x3fffffff</span>; <span class="comment">//初始化</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> k=i;k&lt;=j;k++)&#123;</span><br><span class="line">                dp[i][j]=<span class="built_in">min</span>(dp[i][j],dp[i][k]+dp[k+<span class="number">1</span>][j]+s[j]-s[i<span class="number">-1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;dp[<span class="number">1</span>][n];</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Haorical</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://haorical.xyz/posts/2254/">https://haorical.xyz/posts/2254/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://haorical.xyz" target="_blank">haorical的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a></div><div class="post_share"><div class="social-share" data-image="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://fastly.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/45132/"><img class="next-cover" src="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">CUMT信息安全专业算法设计与分析实验考试2022</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/45132/" title="CUMT信息安全专业算法设计与分析实验考试2022"><img class="cover" src="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-16</div><div class="title">CUMT信息安全专业算法设计与分析实验考试2022</div></div></a></div><div><a href="/posts/29925/" title="算法设计与分析A"><img class="cover" src="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-05</div><div class="title">算法设计与分析A</div></div></a></div><div><a href="/posts/28683/" title="PTA刷题记录"><img class="cover" src="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-14</div><div class="title">PTA刷题记录</div></div></a></div><div><a href="/posts/63805/" title="算法设计实验复习"><img class="cover" src="https://my-photos-test.oss-cn-hangzhou.aliyuncs.com/2021/202204152201704.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-05-10</div><div class="title">算法设计实验复习</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E9%A2%98-40"><span class="toc-number">1.</span> <span class="toc-text">综合题 40</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E8%BF%9E%E4%B9%98-10"><span class="toc-number">1.1.</span> <span class="toc-text">矩阵连乘 10</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%81%E6%B0%B4%E4%BD%9C%E4%B8%9A%E8%B0%83%E5%BA%A6%E5%8F%98%E5%BD%A2-10"><span class="toc-number">1.2.</span> <span class="toc-text">流水作业调度变形 10</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84-10"><span class="toc-number">1.3.</span> <span class="toc-text">最短路径 10</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91-10"><span class="toc-number">1.4.</span> <span class="toc-text">最小生成树 10</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90"><span class="toc-number">2.</span> <span class="toc-text">算法分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6-15"><span class="toc-number">2.1.</span> <span class="toc-text">时间复杂度 15</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#01%E8%83%8C%E5%8C%85%E5%8F%98%E5%BD%A2-15"><span class="toc-number">2.2.</span> <span class="toc-text">01背包变形 15</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.</span> <span class="toc-text">算法设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%B0%E9%87%8D-15"><span class="toc-number">3.1.</span> <span class="toc-text">称重 15</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%AF%E6%9C%A8%E5%A0%86-15"><span class="toc-number">3.2.</span> <span class="toc-text">积木堆 15</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 By Haorical</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://fastly.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'lHtaVmeX92EN0sTKncDq3p1B-9Nh9j0Va',
+      appKey: 'rRiyfIJKeQU4Xg5WVHLqw9cf',
+      avatar: 'monsterid',
+      serverURLs: 'https://lc.haorical.xyz',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: true
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://fastly.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

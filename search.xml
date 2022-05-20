@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>算法设计分析考试2022</title>
+      <link href="/posts/2254/"/>
+      <url>/posts/2254/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>总的来说，感觉这次比较简单，应该是疫情上网课的原因，算的数据也比较小，虽然最后延长了15分钟，但好好复习应该都可以做完</p></blockquote><h2 id="综合题-40"><a href="#综合题-40" class="headerlink" title="综合题 40"></a>综合题 40</h2><h3 id="矩阵连乘-10"><a href="#矩阵连乘-10" class="headerlink" title="矩阵连乘 10"></a>矩阵连乘 10</h3><p>5x5矩阵，挺好算的，<strong>送分</strong></p><ol><li>求m[1][5]</li><li>最少乘法次数</li><li>最优解</li></ol><h3 id="流水作业调度变形-10"><a href="#流水作业调度变形-10" class="headerlink" title="流水作业调度变形 10"></a>流水作业调度变形 10</h3><p>只是把作业换成切菜和炒菜了，<strong>送分</strong></p><ol><li>安排顺序</li><li>时间</li></ol><h3 id="最短路径-10"><a href="#最短路径-10" class="headerlink" title="最短路径 10"></a>最短路径 10</h3><p>没什么好说的，就是给了个图，求到各点的最短路径，<strong>送分</strong></p><h3 id="最小生成树-10"><a href="#最小生成树-10" class="headerlink" title="最小生成树 10"></a>最小生成树 10</h3><p>6节点 10个边</p><ol><li><p>kruskal求最小生成树 <strong>送分</strong></p></li><li><p>比较prim算法和krusal哪个更适合</p></li></ol><p>第二问就是比较时间复杂度，一个是O(nm)另一个是O(mlog(m))比大小就行</p><h2 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h2><h3 id="时间复杂度-15"><a href="#时间复杂度-15" class="headerlink" title="时间复杂度 15"></a>时间复杂度 15</h3><ol><li>求时间复杂度</li><li>比较二分、归并、上面算法的上界</li></ol><p>也是比较好算，第二问别记错就行 log(n) nlog(n) n^2 <strong>送分</strong></p><h3 id="01背包变形-15"><a href="#01背包变形-15" class="headerlink" title="01背包变形 15"></a>01背包变形 15</h3><pre><code>p=[48 49 40 45]v=[8 7 10 9]m=100</code></pre><ol><li>回溯法</li><li>优先级队列分支限界</li></ol><p>复习到了的，一般都会 <strong>送分</strong></p><h2 id="算法设计"><a href="#算法设计" class="headerlink" title="算法设计"></a>算法设计</h2><h3 id="称重-15"><a href="#称重-15" class="headerlink" title="称重 15"></a>称重 15</h3><p>255个鹅蛋，1个鸭蛋，混一块，给个天平，设计算法称出鸭蛋</p><ol><li>实际不高于log(n)复杂度算法</li><li>100个蛋，最多称多少次，找到鸭蛋</li><li>设计一个更快的算法</li></ol><p>和课件称金块的很像，第一问二分放天平两边，第二问6个，第三问三分四分…… <strong>送分</strong></p><h3 id="积木堆-15"><a href="#积木堆-15" class="headerlink" title="积木堆 15"></a>积木堆 15</h3><blockquote><p>n堆积木，每次合并2堆，合并(n-1)次，求最小合并代价。代价：合并的两个积木堆积木数量和</p></blockquote><ol><li>设计算法 <strong>送分</strong></li><li>给一组数据，求合并策略 <strong>送分</strong></li><li>只能合并挨着的两堆，设计dp算法，求最小代价</li></ol><p>一二问贪心，贪心策略：每次合并，最少的两堆优先</p><p>第二问，类似哈夫曼树的求解过程</p><p>第三问区间dp，就是石子合并</p><blockquote><p>设有N堆沙子排成一排，其编号为1，2，3，…，N（N&lt; &#x3D;300）。每堆沙子有一定的数量，可以用一个整数来描述，现在要将N堆沙子合并成为一堆，每次只能合并相邻的两堆，合并的代价为这两堆沙子的数量之和，合并后与这两堆沙子相邻的沙子将和新堆相邻，合并时由于选择的顺序不同，合并的总代价也不相同，如有4堆沙子分别为1 3 5 2我们可以先合并1、2堆，代价为4，得到4 5 2又合并1，2堆，代价为9，得到9 2，再合并得到11，总代价为4+9+11&#x3D;24，如果第二步是先合并2，3堆，则代价为7，得到4 7，最后一次合并代价为11，总代价为4+7+11&#x3D;22；问题是：找出一种合理的方法，使总的代价最小。输出最小代价。</p></blockquote><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 状态转移方程</span></span><br><span class="line"><span class="comment">// dp[i][j]表示[i,j]区间合并最小代价</span></span><br><span class="line"><span class="comment">// dp[i][j]=min(dp[i][j],dp[i][k]+dp[k+1][j]+s[j]-s[i-1])</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N=<span class="number">1010</span>;</span><br><span class="line"><span class="type">int</span> a[N],s[N],dp[N][N];</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n,t;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123; <span class="comment">// 1开始</span></span><br><span class="line">        cin&gt;&gt;s[i];</span><br><span class="line">        s[i]+=s[i<span class="number">-1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> len=<span class="number">2</span>;len&lt;=n;len++)&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i+len<span class="number">-1</span>&lt;=n;i++)&#123;</span><br><span class="line">            <span class="type">int</span> j=i+len<span class="number">-1</span>;</span><br><span class="line">            dp[i][j]=<span class="number">0x3fffffff</span>; <span class="comment">//初始化</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> k=i;k&lt;=j;k++)&#123;</span><br><span class="line">                dp[i][j]=<span class="built_in">min</span>(dp[i][j],dp[i][k]+dp[k+<span class="number">1</span>][j]+s[j]-s[i<span class="number">-1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;dp[<span class="number">1</span>][n];</span><br><span class="line">    <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 考试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CUMT信息安全专业算法设计与分析实验考试2022</title>
       <link href="/posts/45132/"/>
       <url>/posts/45132/</url>

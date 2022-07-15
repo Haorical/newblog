@@ -89,6 +89,31 @@
     
     
     <entry>
+      <title>mmWave基础知识</title>
+      <link href="/posts/13065/"/>
+      <url>/posts/13065/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1DFFT"><a href="#1DFFT" class="headerlink" title="1DFFT"></a>1DFFT</h2><p>加窗：让旁瓣平缓，降低赋值，凸显主峰</p><p><img src="https://img-blog.csdnimg.cn/2020072614212521.png"><br><img src="https://img-blog.csdnimg.cn/20200726142143907.png"></p><figure class="highlight m"><table><tr><td class="code"><pre><span class="line">f<span class="built_in">=</span>Fs/(N-<span class="number">1</span>)*(<span class="number">0</span>:N-<span class="number">1</span>); <span class="comment">%Fs采样率 </span></span><br><span class="line">距离：r<span class="built_in">=</span>f*c/(<span class="number">2</span>*k); <span class="comment">%k 调频斜率 k=B/Tc</span></span><br></pre></td></tr></table></figure><h2 id="2DFFT"><a href="#2DFFT" class="headerlink" title="2DFFT"></a>2DFFT</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 大创 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mmWave </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PWN入门到入土</title>
       <link href="/posts/53878/"/>
       <url>/posts/53878/</url>
